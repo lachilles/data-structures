@@ -24,9 +24,18 @@ def unique_houses(filename):
 
         house = token[2]
 
-        houses.add(house)
+        # for item in token:
+        #         if item == '':
+        #             token.remove('')
+        #         else:
+        #             pass            
+
+        if house != '':
+            houses.add(house)
 
     return houses
+
+print unique_houses('cohort_data.txt')
 
 
 def sort_by_cohort(filename):
